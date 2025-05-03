@@ -15,13 +15,14 @@ import {
   FaJs,
   FaCss3Alt,
   FaYoutube,
+  FaReact,
 } from "react-icons/fa";
 import { BsFiletypeXml } from "react-icons/bs";
 import { TbBrandCpp, TbBrandKotlin } from "react-icons/tb";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoLogoGithub } from "react-icons/io";
-
+import  Contact  from "../pages/Contact";
 // Footer Social Icons
 // This array holds the social media icons and links for the footer section.
 // If you wish to add or remove any icons, modify the 'footerIcons' array below.
@@ -71,12 +72,12 @@ const navElements = ["About", "Education", "Skills", "Projects", "Contact"];
 const AboutPage = {
   authorProfile: "", // Your profile image link
   authorDescription:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ad architecto sint quaerat necessitatibus hic voluptas odio ex quidem eaque quo dicta, corrupti, incidunt quis reiciendis aperiam maiores molestias autem?", // Short bio or description about yourself
-  getInTouchUrl: "Your contact url", // URL for your contact or form page
-  authorName: "Andrew hompson", // Replace with your name
+    "Hello! I’m Andrew Thompson, an Aspiring Full‑Stack Developer eager to craft intuitive, high‑performance web applications. With hands‑on training at the NASCAR Technical Institute and recent graduation from UNC Charlotte’s Software Development Bootcamp (May 2025), I’ve honed skills in HTML, CSS, JavaScript, TypeScript, React, Node.js, Express, MongoDB, PostgreSQL, and CI/CD pipelines. Honored as NTI Student of the Course for Professional Service Writing and recipient of the NTI Crew Chief Award, I thrive under pressure and excel in collaborative teams. My portfolio features six single‑page applications—like GridLock (a React‑based tic‑tac‑toe game), a Kanban board, a book search app, a weather dashboard, and more—each live‑deployed for your review. These projects highlight my ability to architect scalable front‑end components, integrate robust back‑end services, and implement solid form validation for seamless user experiences. I’m passionate about writing clean, maintainable code and continuously refining my craft through collaboration and feedback. Explore my work samples, and let’s connect to discuss how I can bring value to your next project!", 
+  getInTouchUrl: Contact , // URL for your contact or form page
+  authorName: "Andrew Thompson", // Replace with your name
   profileImgTagLine: "Aspiring Software Developer", // Your tagline or job title
   authorContactMail: "aj.thompson8888@gmail.com", // Your email address
-  authorContactNumber: "", // Your contact number (optional)
+  authorContactNumber: "000-000-0000", // Your contact number (optional)
 };
 
 // Education Details
@@ -84,16 +85,22 @@ const AboutPage = {
 // You can add more education objects if necessary.
 const EducationPage = [
   {
-    graduationYear: 2021, // Year of graduation
+    graduationYear: 2007, // Year of graduation
     degreeType: "High School", // Type of degree
-    institution: "XYZ College", // Institution name
-    institutionUrl: "", // Institution website link (optional)
+    institution: "Eau Gallie High School", // Institution name
+    institutionUrl: "https://www.brevardschools.org/o/eghs", // Institution website link (optional)
   },
   {
-    graduationYear: 2027, // Year of graduation
-    degreeType: "Bachelor's degree", // Degree type
-    institution: "XYZ University", // Institution name
-    institutionUrl: "", // Institution website link (optional)
+    graduationYear: 2012, // Year of graduation
+    degreeType: "Associates in Arts", // Degree type
+    institution: "Brevard Community College (Now Eastern Florida State College)", // Institution name
+    institutionUrl: "https://www.easternflorida.edu/", // Institution website link (optional)
+  },
+  {
+    graduationYear: "Not Complete as of 2015", // Year of graduation
+    degreeType: "Bachelor's of Science Mechanical Engineering", // Degree type
+    institution: "University of North Carolina at Charlotte", // Institution name
+    institutionUrl: "https://www.charlotte.edu/", // Institution website link (optional)
   },
   // Add more educational qualifications if needed
 ];
@@ -103,38 +110,38 @@ const EducationPage = [
 // To add more certifications, simply copy and modify the object structure below.
 const CertificatesPage = [
   {
-    img: "Your certificate image", // Certificate image URL
-    title: "Blue Mountain Certificate", // Certificate title
-    description: "Lorem ipsum...", // Short description of the certification
-    issuedBy: "Blue Mountain", // Issuer (e.g., Coursera, Google, etc.)
+    img: "", // Certificate image URL
+    title: "None Yet", // Certificate title
+    description: "", // Short description of the certification
+    issuedBy: "", // Issuer (e.g., Coursera, Google, etc.)
     credentialURL: "", // Optional: URL to verify the certificate (if applicable)
   },
   {
-    img: "Your certificate image", // Certificate image URL
-    title: "Blue Mountain Certificate", // Certificate title
-    description: "Lorem ipsum...", // Short description of the certification
-    issuedBy: "Blue Mountain", // Issuer (e.g., Coursera, Google, etc.)
+    img: "", // Certificate image URL
+    title: "None Yet", // Certificate title
+    description: "", // Short description of the certification
+    issuedBy: "", // Issuer (e.g., Coursera, Google, etc.)
     credentialURL: "", // Optional: URL to verify the certificate (if applicable)
   },
   {
-    img: "Your certificate image", // Certificate image URL
-    title: "Blue Mountain Certificate", // Certificate title
-    description: "Lorem ipsum...", // Short description of the certification
-    issuedBy: "Blue Mountain", // Issuer (e.g., Coursera, Google, etc.)
+    img: "", // Certificate image URL
+    title: "", // Certificate title
+    description: "", // Short description of the certification
+    issuedBy: "", // Issuer (e.g., Coursera, Google, etc.)
     credentialURL: "", // Optional: URL to verify the certificate (if applicable)
   },
   {
-    img: "Your certificate image", // Certificate image URL
-    title: "Blue Mountain Certificate", // Certificate title
-    description: "Lorem ipsum...", // Short description of the certification
-    issuedBy: "Blue Mountain", // Issuer (e.g., Coursera, Google, etc.)
+    img: "", // Certificate image URL
+    title: "None Yet", // Certificate title
+    description: "", // Short description of the certification
+    issuedBy: "", // Issuer (e.g., Coursera, Google, etc.)
     credentialURL: "", // Optional: URL to verify the certificate (if applicable)
   },
   {
-    img: "Your certificate image", // Certificate image URL
-    title: "Blue Mountain Certificate", // Certificate title
-    description: "Lorem ipsum...", // Short description of the certification
-    issuedBy: "Blue Mountain", // Issuer (e.g., Coursera, Google, etc.)
+    img: "", // Certificate image URL
+    title: "None Yet", // Certificate title
+    description: "", // Short description of the certification
+    issuedBy: "", // Issuer (e.g., Coursera, Google, etc.)
     credentialURL: "", // Optional: URL to verify the certificate (if applicable)
   },
   // Add more certificates following the structure above
@@ -147,13 +154,10 @@ const CertificatesPage = [
 const skillsPage = [
   FaGitAlt,
   FaGithub,
-  TbBrandCpp,
-  FaJava,
   FaJs,
-  TbBrandKotlin,
+  FaReact,
   FaPython,
   FaHtml5,
-  BsFiletypeXml,
   FaCss3Alt,
   RiTailwindCssFill,
   FaYoutube,
@@ -164,20 +168,20 @@ const skillsPage = [
 // You can add or remove projects as needed.
 const projectsPage = [
   {
-    projectName: "Git clone", // Project name
-    projectDescription: "lorem ipsum...", // Project description
-    projectURL: "", // Optional: Project demo link (if hosted)
+    projectName: "Book Search", // Project name
+    projectDescription: "Search for book and save them to a list if you want to read them or change that list to if you have read them", // Project description
+    projectURL: "https://booksearch-56mo.onrender.com/", // Optional: Project demo link (if hosted)
     githubRepositoryURL: "", // Optional: GitHub repository link
-    tags: "Flask, React.js, MongoDB, Rest API", // Tech stack used in the project
-    date: "Sep 2022 - May 2023", // Project duration
+    tags: "MongoDB, Express.js, React.js, and Node.js", // Tech stack used in the project
+    date: "November 2024 - May 2025", // Project duration
   },
   {
     projectName: "Git clone", // Project name
     projectDescription: "lorem ipsum...", // Project description
     projectURL: "", // Optional: Project demo link (if hosted)
     githubRepositoryURL: "", // Optional: GitHub repository link
-    tags: "Flask, React.js, MongoDB, Rest API", // Tech stack used in the project
-    date: "Sep 2022 - May 2023", // Project duration
+    tags: "", // Tech stack used in the project
+    date: "", // Project duration
   },
   // Add more projects or remove the ones you don't need
 ];
