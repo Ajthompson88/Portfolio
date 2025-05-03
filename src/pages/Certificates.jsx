@@ -2,7 +2,10 @@ import { Certificate, PageTitle } from "../components/components.js";
 import { containerStyle } from "./styles.js";
 import { CertificatesPage } from "../assets/assets.js";
 
+
+
 const Certificates = () => {
+  
   return (
     <>
       {(CertificatesPage && CertificatesPage.length > 0) && (
