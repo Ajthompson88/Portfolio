@@ -4,7 +4,6 @@ import {
   About,
   Education,
   Skills,
-  Services,
   Projects,
   Contact,
   Certificates,

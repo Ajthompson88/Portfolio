@@ -200,5 +200,5 @@ export {
   projectsPage,
   CertificatesPage,
   Loading,
-  profilePic
+  Portrait,
 };
