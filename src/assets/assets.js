@@ -73,10 +73,10 @@ const AboutPage = {
   authorDescription:
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ad architecto sint quaerat necessitatibus hic voluptas odio ex quidem eaque quo dicta, corrupti, incidunt quis reiciendis aperiam maiores molestias autem?", // Short bio or description about yourself
   getInTouchUrl: "Your contact url", // URL for your contact or form page
-  authorName: "John Doe", // Replace with your name
-  profileImgTagLine: "Software Engineer @ Google", // Your tagline or job title
-  authorContactMail: "johndoe@gmail.com", // Your email address
-  authorContactNumber: "843-695-0671", // Your contact number (optional)
+  authorName: "Andrew hompson", // Replace with your name
+  profileImgTagLine: "Aspiring Software Developer", // Your tagline or job title
+  authorContactMail: "aj.thompson8888@gmail.com", // Your email address
+  authorContactNumber: "", // Your contact number (optional)
 };
 
 // Education Details
