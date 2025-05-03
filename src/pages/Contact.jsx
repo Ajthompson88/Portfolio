@@ -17,7 +17,7 @@ const Contact = () => {
       <div className="flex flex-col bedar-sc2:flex-row bg-mainColor rounded-xl overflow-hidden">
         <div className="hidden bedar-sc2:flex justify-center items-center w-1/2">
           <img
-            src="https://saqibbedar.github.io/Portfolio/contact_image.webp"
+            src=""
             onLoad={() => setIsLoading(false)}
             className={`${isLoading ? "skeleton w-96 h-80" : ""}`}
             alt="contact-us-image"
@@ -36,10 +36,7 @@ const Contact = () => {
             Contact Me
           </h1>
           <div className="text-center mb-4">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos autem
-            deserunt maiores quas facere quae qui perferendis iure, dolorem
-            temporibus ipsum fugit ullam eaque soluta cupiditate, eius et
-            officiis veniam.
+          
           </div>
           <Link
             to={`mailto:${AboutPage.authorContactMail}`}

@@ -2,6 +2,7 @@ import { imgLogo, textLogo, navElements } from "../../assets/assets";
 import { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
+import PropTypes from "prop-types";
 
 const Navbar = ({ activeElem, setActiveElem }) => {
   const [isMenuHidden, setIsMenuHidden] = useState(true);
@@ -9,6 +10,7 @@ const Navbar = ({ activeElem, setActiveElem }) => {
   useEffect(() => {
     if (!isMenuHidden) {
       const handleBodyClick = (e) => {
+        e.stopPropagation();
         setIsMenuHidden(true);
       };
 
@@ -91,5 +93,10 @@ const Navbar = ({ activeElem, setActiveElem }) => {
     </div>
   );
 };
+Navbar.propTypes = {
+  activeElem: PropTypes.string.isRequired,
+  setActiveElem: PropTypes.func.isRequired,
+};
 
 export default Navbar;
+
