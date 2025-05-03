@@ -200,5 +200,6 @@ export {
   projectsPage,
   CertificatesPage,
   Loading,
-  profilePic
+  Portrait,
+  // Removed profilePic as it is not defined
 };
