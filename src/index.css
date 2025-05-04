@@ -15,7 +15,7 @@ html{
 body{
   background-image: url(../Assets/Code-scaled.jpeg);
   font-family: "Inter", sans-serif;
-  color: #212835;
+  color: white;
   scroll-behavior: smooth;
   overflow-x: hidden;
   scroll-padding: 110px;
