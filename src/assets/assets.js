@@ -22,7 +22,6 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoLogoGithub } from "react-icons/io";
 import Loading from "../../Assets/loading.png"; // Loading image for the portfolio
 import Portrait from "../../Assets/portrait.jpeg"; // Profile picture for the portfolio
-import crossLogo from "../../Assets/smallCross.png";
 import Contact from "../pages/Contact";
 
 // Footer Social Icons
@@ -195,5 +194,5 @@ export {
   CertificatesPage,
   Loading,
   Portrait,
-  crossLogo,
+
 };
