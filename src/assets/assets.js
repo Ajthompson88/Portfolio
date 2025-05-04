@@ -139,51 +139,42 @@ const projectsPage = [
     projectName: "Book Search", // Project name
     projectDescription: "Search for book and save them to a list if you want to read them or change that list to if you have read them", // Project description
     projectURL: "https://booksearch-56mo.onrender.com/", // Optional: Project demo link (if hosted)
-    githubRepositoryURL: "", // Optional: GitHub repository link
+    githubRepositoryURL: "https://github.com/Ajthompson88/M18", // Optional: GitHub repository link
     tags: "MongoDB, Express.js, React.js, and Node.js", // Tech stack used in the project
     date: "November 2024 - May 2025", // Project duration
   },
   {
     projectName: "Gridlock", // Project name
-    projectDescription: "Soon to come", // Project description
+    projectDescription: "Want to play a fun game of Tic-Tac-Toe? Have no one to play with? Thats no problem, just checkout GridLock the Tic-Tac-Toe game that can play against you.", // Project description
     projectURL: "https://gridlock-75x0.onrender.com/", // Optional: Project demo link (if hosted)
     githubRepositoryURL: "https://github.com/Jimmykotter/GridLock", // Optional: GitHub repository link
     tags: "MongoDB, Express.js, React.js, and Node.js", // Tech stack used in the project
     date: "April 2025 - May 2025", // Project duration
   },
   {
-    projectName: "Book Search", // Project name
-    projectDescription: "Search for book and save them to a list if you want to read them or change that list to if you have read them", // Project description
-    projectURL: "https://booksearch-56mo.onrender.com/", // Optional: Project demo link (if hosted)
-    githubRepositoryURL: "", // Optional: GitHub repository link
-    tags: "MongoDB, Express.js, React.js, and Node.js", // Tech stack used in the project
+    projectName: "Look Me Up - Candidate Finder", // Project name
+    projectDescription: "A candidate finder that searches through Github profiles for you randomly.", // Project description
+    projectURL: "https://lookmeup.onrender.com/", // Optional: Project demo link (if hosted)
+    githubRepositoryURL: "https://github.com/Ajthompson88/LookMeUp", // Optional: GitHub repository link
+    tags: "JavaScript TypeScript CSS HTML", // Tech stack used in the project
     date: "November 2024 - May 2025", // Project duration
   },
   {
-    projectName: "Gridlock", // Project name
-    projectDescription: "Soon to come", // Project description
-    projectURL: "https://gridlock-75x0.onrender.com/", // Optional: Project demo link (if hosted)
-    githubRepositoryURL: "https://github.com/Jimmykotter/GridLock", // Optional: GitHub repository link
+    projectName: "Traveller's Weather Dashboard", // Project name
+    projectDescription: "A weather API for searching a city that you may be traveling to and want to checkout a 5 day forecast.", // Project description
+    projectURL: "https://weatherapi-1-ia2e.onrender.com/", // Optional: Project demo link (if hosted)
+    githubRepositoryURL: "https://github.com/Ajthompson88/WeatherAPI", // Optional: GitHub repository link
     tags: "MongoDB, Express.js, React.js, and Node.js", // Tech stack used in the project
     date: "April 2025 - May 2025", // Project duration
   },
   {
-    projectName: "Book Search", // Project name
-    projectDescription: "Search for book and save them to a list if you want to read them or change that list to if you have read them", // Project description
-    projectURL: "https://booksearch-56mo.onrender.com/", // Optional: Project demo link (if hosted)
-    githubRepositoryURL: "", // Optional: GitHub repository link
+    projectName: "KanBan Board", // Project name
+    projectDescription: "A KanBan board for keeping track of tasks during a project.", // Project description
+    projectURL: "https://kanban-board-t0wb.onrender.com/", // Optional: Project demo link (if hosted)
+    githubRepositoryURL: "https://github.com/Ajthompson88/M14KanbanBoardChallenge", // Optional: GitHub repository link
     tags: "MongoDB, Express.js, React.js, and Node.js", // Tech stack used in the project
     date: "November 2024 - May 2025", // Project duration
   },
-  {
-    projectName: "Gridlock", // Project name
-    projectDescription: "Soon to come", // Project description
-    projectURL: "https://gridlock-75x0.onrender.com/", // Optional: Project demo link (if hosted)
-    githubRepositoryURL: "https://github.com/Jimmykotter/GridLock", // Optional: GitHub repository link
-    tags: "MongoDB, Express.js, React.js, and Node.js", // Tech stack used in the project
-    date: "April 2025 - May 2025", // Project duration
-  },
-  
 ];
 
 // Exporting all components for use in other parts of the application
