@@ -17,7 +17,7 @@ const Contact = () => {
       <div className="flex flex-col bedar-sc2:flex-row bg-mainColor rounded-xl overflow-hidden">
         <div className="hidden bedar-sc2:flex justify-center items-center w-1/2">
           <img
-            src=""
+            src="https://saqibbedar.github.io/Portfolio/contact_image.webp"
             onLoad={() => setIsLoading(false)}
             className={`${isLoading ? "skeleton w-96 h-80" : ""}`}
             alt="contact-us-image"
