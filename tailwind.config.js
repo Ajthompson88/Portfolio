@@ -7,7 +7,7 @@ export default {
         "bedar-sc1": "1167px",
         "bedar-sc2": "967px",
         "bedar-sm": "467px",
-        // 'bedar-xl' : "1667px",
+        'bedar-xl' : "1667px",
       },
       backgroundColor: {
         'mainColor': "#212835",
@@ -21,3 +21,5 @@ export default {
   },
   plugins: [],
 };
+
+
