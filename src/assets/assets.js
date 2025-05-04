@@ -61,7 +61,7 @@ const footerIcons = [
 // 'textLogo' is used for displaying the text logo on your portfolio. You can replace it with your name.
 // 'imgLogo' is optional and can be used to show an image logo.
 const textLogo = "Jeremiah 29:11"; // Replace with your name or brand name
-const imgLogo= crossLogo; // Use the imported image
+const imgLogo= ""; // Use the imported image
 
 // Navigation Menu Items
 // This array defines the navigation menu items. Add or remove items as necessary.
@@ -194,4 +194,5 @@ export {
   CertificatesPage,
   Loading,
   Portrait,
+  crossLogo,
 };
