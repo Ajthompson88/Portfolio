@@ -9,13 +9,14 @@ import {
   FaFacebookSquare,
   FaHtml5,
   FaPython,
-  FaGitAlt,
+  FaGit,
   FaGithub,
   FaJs,
   FaCss3Alt,
   FaReact,
 } from "react-icons/fa";
 
+import { RiNodejsFill } from "react-icons/ri"
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoLogoGithub } from "react-icons/io";
@@ -94,7 +95,7 @@ const EducationPage = [
     institutionUrl: "https://www.easternflorida.edu/", // Institution website link (optional)
   },
   {
-    graduationYear: "Not Complete as of 2015", // Year of graduation
+    graduationYear: "N/A", // Year of graduation
     degreeType: "Bachelor's of Science Mechanical Engineering", // Degree type
     institution: "University of North Carolina at Charlotte", // Institution name
     institutionUrl: "https://www.charlotte.edu/", // Institution website link (optional)
@@ -108,7 +109,7 @@ const EducationPage = [
 const CertificatesPage = [
   {
     img: Loading, // Certificate image URL
-    title: "", // Certificate title
+    title: "Coming Soon", // Certificate title
     description: "", // Short description of the certification
     issuedBy: "", // Issuer (e.g., Coursera, Google, etc.)
     credentialURL: "", // Optional: URL to verify the certificate (if applicable)
@@ -121,7 +122,8 @@ const CertificatesPage = [
 // To add or remove icons, import them from react-icons and include them here.
 // Example: import { AiFillAmazonSquare } from "react-icons/ai" and add AiFillAmazonSquare below.
 const skillsPage = [
-  FaGitAlt,
+  FaGit,
+  RiNodejsFill,
   FaGithub,
   FaJs,
   FaReact,
