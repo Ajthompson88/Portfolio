@@ -60,7 +60,7 @@ const Projects = () => {
               )}
             </div>
             <div>
-              <Link to={"/Contact"} className="flex justify-center mt-9">
+              <Link to={"/"} className="flex justify-center mt-9">
                 <button className="project-btn bg-mainColor hover:bg-mainHover text-white py-3 px-4 rounded-full flex items-center gap-2 transition-all ease-linear">
                   More Projects{""}
                   {isHovered ? (

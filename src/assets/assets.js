@@ -22,6 +22,8 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoLogoGithub } from "react-icons/io";
 import Loading from "../../Assets/loading.png"; // Loading image for the portfolio
 import Portrait from "../../Assets/portrait.jpeg"; // Profile picture for the portfolio
+import crossLogo from "../../Assets/smallCross.png";
+
 // Footer Social Icons
 // This array holds the social media icons and links for the footer section.
 // If you wish to add or remove any icons, modify the 'footerIcons' array below.
@@ -58,8 +60,8 @@ const footerIcons = [
 // Header Text and Logo Configuration
 // 'textLogo' is used for displaying the text logo on your portfolio. You can replace it with your name.
 // 'imgLogo' is optional and can be used to show an image logo.
-const textLogo = "Andrew Thompson"; // Replace with your name or brand name
-const imgLogo= ""; // Use the imported image
+const textLogo = "Jeremiah 29:11"; // Replace with your name or brand name
+const imgLogo= crossLogo; // Use the imported image
 
 // Navigation Menu Items
 // This array defines the navigation menu items. Add or remove items as necessary.

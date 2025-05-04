@@ -4,12 +4,21 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body{
+html{
     font-family: "Inter", sans-serif;
     color: #212835;
     scroll-behavior: smooth;
     overflow-x: hidden;
     scroll-padding: 110px;
+}
+
+body{
+  background-image: url(../Assets/Code-scaled.jpeg);
+  font-family: "Inter", sans-serif;
+  color: #212835;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scroll-padding: 110px;
 }
 
 .custom-scrollbar::-webkit-scrollbar {

@@ -2,6 +2,7 @@ import { FaFolderOpen } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 import { IoEyeSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const Project = ({
   projectName,
@@ -38,5 +39,14 @@ const Project = ({
       </div>
     );
 };
+Project.propTypes = {
+  projectName: PropTypes.string.isRequired,
+  projectDescription: PropTypes.string.isRequired,
+  projectURL: PropTypes.string,
+  githubRepository: PropTypes.string,
+  tags: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  date: PropTypes.string,
+};
 
 export default Project;
+

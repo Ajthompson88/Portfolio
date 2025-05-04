@@ -1,4 +1,3 @@
-import React from "react";
 import { containerStyle } from "./styles.js";
 import { PageTitle } from "../components/components.js";
 
