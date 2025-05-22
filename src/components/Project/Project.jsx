@@ -8,7 +8,7 @@ const Project = ({
   projectName,
   projectDescription,
   projectURL,
-  githubRepository,
+  githubRepositoryURL,
   tags,
   date,
 }) => {
@@ -30,7 +30,7 @@ const Project = ({
             )}
 
             {
-              <Link to={githubRepository}>
+              <Link to={githubRepositoryURL}>
                 {<IoLogoGithub title="Source Code" className="w-6 h-6" />}
               </Link>
             }
