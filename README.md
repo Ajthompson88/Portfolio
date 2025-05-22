@@ -3,7 +3,30 @@
 Welcome to my Single-Page Application (SPA) portfolio! This React-based portfolio is designed to showcase my best work samples—perfect for employers seeking candidates with experience in building dynamic, responsive, and user-friendly SPAs.
 
 ---
+## Table of Contents
 
+  [User Story](#-user-story)
+
+  [Acceptance Criteria](#-acceptance-criteria)
+
+  [Live Demo](#-live-demo)
+
+  [Badges](#-badges)
+
+  [Installation & Setup](#️-installation--setup)
+
+  [Usage](#-usage)
+
+  [Technologies Used](#-technologies-used)
+
+  [Contributing](#-contributing)
+
+  [License](#-license)
+
+  [Contact](#-contact)
+  
+
+  
 ## 📖 User Story
 
 > **As** an employer looking for candidates with experience building single-page applications
@@ -48,6 +71,9 @@ Welcome to my Single-Page Application (SPA) portfolio! This React-based portfoli
 Check out the deployed portfolio: [Live Site URL](https://andrewthompsonportfolio.netlify.app/)
 
 ---
+## Badges ##
+
+![](Assets/coding_full_stack_web_development_certificate252px.png)
 
 ## 🛠️ Installation & Setup
 

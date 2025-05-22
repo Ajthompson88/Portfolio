@@ -17,10 +17,9 @@ import {
 } from "react-icons/fa";
 
 import { RiNodejsFill } from "react-icons/ri"
-import { RiTailwindCssFill } from "react-icons/ri";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoLogoGithub } from "react-icons/io";
-import Loading from "../../Assets/loading.png"; // Loading image for the portfolio
+import Badge from "../../Assets/coding_full_stack_web_development_certificate252px.png"; // Loading image for the portfolio
 import Portrait from "../../Assets/portrait.jpeg"; // Profile picture for the portfolio
 import Contact from "../pages/Contact";
 
@@ -97,11 +96,17 @@ const EducationPage = [
     institutionUrl: "https://www.easternflorida.edu/", // Institution website link (optional)
   },
   {
-    graduationYear: "N/A", // Year of graduation
+    graduationYear: "Not Finished - 2015", // Year of graduation
     degreeType: "Bachelor's of Science Mechanical Engineering", // Degree type
     institution: "University of North Carolina at Charlotte", // Institution name
     institutionUrl: "https://www.charlotte.edu/", // Institution website link (optional)
   },
+  {
+    graduationYear: 2025, // Year of graduation
+    degreeType: "Full Stack Web Development Certificate", // Degree type
+    institution: "University of North Carolina at Charlotte", // Institution name
+    institutionUrl: "https://bootcamp.uncc.edu/", // Institution website link (optional)
+  }
   // Add more educational qualifications if needed
 ];
 
@@ -110,11 +115,11 @@ const EducationPage = [
 // To add more certifications, simply copy and modify the object structure below.
 const CertificatesPage = [
   {
-    img: Loading, // Certificate image URL
-    title: "Coming Soon", // Certificate title
-    description: "", // Short description of the certification
-    issuedBy: "", // Issuer (e.g., Coursera, Google, etc.)
-    credentialURL: "", // Optional: URL to verify the certificate (if applicable)
+    img: Badge, // Certificate image URL
+    title: "Coding: Full Stack Web Development Certificate", // Certificate title
+    description: "This certificate badge indicates that the holder completed the UNC Charlotte Coding Bootcamp and has the technical expertise to develop web applications requiring UI, front-end, and back-end skills.", // Short description of the certification
+    issuedBy: "UNC Charlotte", // Issuer (e.g., Coursera, Google, etc.)
+    credentialURL: "https://www.credly.com/earner/earned/share/3d764556-e5f4-49b1-b94e-8875edb19b03", // Optional: URL to verify the certificate (if applicable)
   },
   // Add more certificates following the structure above
 ];
@@ -132,7 +137,6 @@ const skillsPage = [
   FaPython,
   FaHtml5,
   FaCss3Alt,
-  RiTailwindCssFill,
 ];
 
 // Projects Section
