@@ -16,7 +16,7 @@ const Certificates = () => {
               {CertificatesPage.map(
                 ({ img, title, description, issuedBy, credentialURL }) => (
                   <Certificate
-                    key={1}
+                    key={credentialURL} // Use a unique key
                     isFlexShrink={true}
                     img={img}
                     title={title}

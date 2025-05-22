@@ -19,7 +19,7 @@ import {
 import { RiNodejsFill } from "react-icons/ri"
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoLogoGithub } from "react-icons/io";
-import Badge from "../../Assets/coding_full_stack_web_development_certificate252px.png"; // Loading image for the portfolio
+import Badge from "../../Assets/coding-full-stack-web-development-certificate.png"; // Loading image for the portfolio
 import Portrait from "../../Assets/portrait.jpeg"; // Profile picture for the portfolio
 import Contact from "../pages/Contact";
 
@@ -71,8 +71,8 @@ const navElements = ["About", "Education", "Skills", "Projects", "Contact"];
 // Replace dummy values with your actual information.
 const AboutPage = {
   authorProfile: Portrait, // Your profile image link
-  authorDescription:"Hello! I’m Andrew Thompson, an Aspiring Full‑Stack Developer eager to craft intuitive, high‑performance web applications. With hands‑on training at the NASCAR Technical Institute and recent graduation from UNC Charlotte’s Software Development Bootcamp (May 2025), I’ve honed skills in HTML, CSS, JavaScript, TypeScript, React, Node.js, Express, MongoDB, PostgreSQL, and CI/CD pipelines. Honored as NTI Student of the Course for Professional Service Writing and recipient of the NTI Crew Chief Award, I thrive under pressure and excel in collaborative teams. My portfolio features six single‑page applications—like GridLock (a React‑based tic‑tac‑toe game), a Kanban board, a book search app, a weather dashboard, and more—each live‑deployed for your review. These projects highlight my ability to architect scalable front‑end components, integrate robust back‑end services, and implement solid form validation for seamless user experiences. I’m passionate about writing clean, maintainable code and continuously refining my craft through collaboration and feedback. Explore my work samples, and let’s connect to discuss how I can bring value to your next project!", 
-  getInTouchUrl:Contact, // URL for your contact or form page
+  authorDescription:"Hello! I’m Andrew Thompson, an Aspiring Full Stack Developer eager to craft intuitive, high performance web applications. With hands on training at the NASCAR Technical Institute and recent graduation from UNC Charlotte’s Software Development Bootcamp (May 2025), I’ve honed skills in HTML, CSS, JavaScript, TypeScript, React, Node.js, Express, MongoDB, PostgreSQL, and CI/CD pipelines. Honored as NTI Student of the Course for Professional Service Writing and recipient of the NTI Crew Chief Award, I thrive under pressure and excel in collaborative teams. My portfolio features six single‑page applications—like GridLock (a React‑based tic‑tac‑toe game), a Kanban board, a book search app, a weather dashboard, and more—each live‑deployed for your review. These projects highlight my ability to architect scalable front‑end components, integrate robust back‑end services, and implement solid form validation for seamless user experiences. I’m passionate about writing clean, maintainable code and continuously refining my craft through collaboration and feedback. Explore my work samples, and let’s connect to discuss how I can bring value to your next project!", 
+  getInTouchUrl: Contact, // URL for your contact or form page
   authorName: "Andrew Thompson", // Replace with your name
   profileImgTagLine: "Aspiring Software Developer", // Your tagline or job title
   authorContactMail: "aj.thompson8888@gmail.com", // Your email address
@@ -142,7 +142,7 @@ const skillsPage = [
 // Projects Section
 // Replace the dummy project data with your actual projects.
 // You can add or remove projects as needed.
-const projectsPage = [
+export const projectsPage = [
   {
     projectName: "Book Search", // Project name
     projectDescription: "Search for book and save them to a list if you want to read them or change that list to if you have read them", // Project description
@@ -194,9 +194,7 @@ export {
   footerIcons,
   EducationPage,
   skillsPage,
-  projectsPage,
   CertificatesPage,
   Loading,
   Portrait,
-
 };
