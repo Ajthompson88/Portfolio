@@ -43,7 +43,7 @@ const Projects = () => {
                   projectName,
                   projectDescription,
                   projectURL,
-                  githubRepository,
+                  githubRepositoryURL,
                   tags,
                   date,
                 }) => (
@@ -52,7 +52,7 @@ const Projects = () => {
                     projectName={projectName}
                     projectDescription={projectDescription}
                     projectURL={projectURL}
-                    githubRepository={githubRepository}
+                    githubRepository={githubRepositoryURL}
                     tags={tags}
                     date={date}
                   />
