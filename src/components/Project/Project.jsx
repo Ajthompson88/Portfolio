@@ -24,15 +24,15 @@ const Project = ({
           <div>{date}</div>
           <div className="flex gap-2">
             {projectURL && (
-              <Link to={projectURL}>
+              <a to={projectURL}>
                 {<IoEyeSharp title="Live demo" className="w-6 h-6" />}
-              </Link>
+              </a>
             )}
 
             {
-              <Link to={githubRepositoryURL}>
+              <a to={githubRepositoryURL}>
                 {<IoLogoGithub title="Source Code" className="w-6 h-6" />}
-              </Link>
+              </a>
             }
           </div>
         </div>
