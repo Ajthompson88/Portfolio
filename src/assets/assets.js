@@ -1,8 +1,4 @@
-// React Icons are used to add social and skill icons to the portfolio.
-// If you want to add more icons or replace existing ones, import them from "react-icons".
-// Visit: https://react-icons.github.io/react-icons/ to explore more icons.
-// Example of importing a new icon: import { AiFillAmazonSquare } from "react-icons/ai";
-
+// src/assets/assets.js
 import {
   FaInstagramSquare,
   FaLinkedin,
@@ -15,119 +11,69 @@ import {
   FaCss3Alt,
   FaReact,
 } from "react-icons/fa";
-
-import { RiNodejsFill } from "react-icons/ri"
+import { RiNodejsFill } from "react-icons/ri";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoLogoGithub } from "react-icons/io";
-import Badge from "../../Assets/coding-full-stack-web-development-certificate.png"; // Loading image for the portfolio
-import Portrait from "../../Assets/portrait.jpeg"; // Profile picture for the portfolio
-import Contact from "../pages/Contact";
+import Badge from "./coding-full-stack-web-development-certificate.png";
+import Portrait from "./portrait.jpeg";
 
-// Footer Social Icons
-// This array holds the social media icons and links for the footer section.
-// If you wish to add or remove any icons, modify the 'footerIcons' array below.
-// Example: To change the Twitter icon, replace 'FaSquareXTwitter' with another icon.
 const footerIcons = [
-  {
-    name: "x", // Social media name
-    component: FaSquareXTwitter, // Twitter icon from react-icons
-    link: "https://x.com/bigblock557?s=21", // Replace with your actual Twitter URL
-  },
-  {
-    name: "linkedIn", // Social media name
-    component: FaLinkedin, // LinkedIn icon
-    link: "https://www.linkedin.com/in/andrew-thompson-442477aa/", // Replace with your actual LinkedIn URL
-  },
-  {
-    name: "facebook",
-    component: FaFacebookSquare, // Facebook icon
-    link: "https://www.facebook.com/andrew.thompson.58726",
-  },
-  {
-    name: "instagram",
-    component: FaInstagramSquare, // Instagram icon
-    link: "https://www.instagram.com/aj.thompson8888/",
-  },
-  {
-    name: "github",
-    component: IoLogoGithub, // GitHub icon
-    link: "https://github.com/Ajthompson88",
-  },
-  // You can add more icons or remove existing ones based on your social profiles.
+  { name: "x", component: FaSquareXTwitter, link: "https://x.com/…" },
+  { name: "linkedIn", component: FaLinkedin, link: "https://linkedin.com/…" },
+  { name: "facebook", component: FaFacebookSquare, link: "https://facebook.com/…" },
+  { name: "instagram", component: FaInstagramSquare, link: "https://instagram.com/…" },
+  { name: "github", component: IoLogoGithub, link: "https://github.com/…" },
 ];
 
-// Header Text and Logo Configuration
-// 'textLogo' is used for displaying the text logo on your portfolio. You can replace it with your name.
-// 'imgLogo' is optional and can be used to show an image logo.
-const textLogo = "Jeremiah 29:11"; // Replace with your name or brand name
-const imgLogo= ""; // Use the imported image
-
-// Navigation Menu Items
-// This array defines the navigation menu items. Add or remove items as necessary.
 const navElements = ["About", "Education", "Skills", "Projects", "Contact"];
 
-// About Page Configuration
-// This object contains all the details for the "About" section of the portfolio.
-// Replace dummy values with your actual information.
 const AboutPage = {
-  authorProfile: Portrait, // Your profile image link
-  authorDescription:"Hello! I’m Andrew Thompson, an Aspiring Full Stack Developer eager to craft intuitive, high performance web applications. With hands on training at the NASCAR Technical Institute and recent graduation from UNC Charlotte’s Software Development Bootcamp (May 2025), I’ve honed skills in HTML, CSS, JavaScript, TypeScript, React, Node.js, Express, MongoDB, PostgreSQL, and CI/CD pipelines. Honored as NTI Student of the Course for Professional Service Writing and recipient of the NTI Crew Chief Award, I thrive under pressure and excel in collaborative teams. My portfolio features six single‑page applications—like GridLock (a React‑based tic‑tac‑toe game), a Kanban board, a book search app, a weather dashboard, and more—each live‑deployed for your review. These projects highlight my ability to architect scalable front‑end components, integrate robust back‑end services, and implement solid form validation for seamless user experiences. I’m passionate about writing clean, maintainable code and continuously refining my craft through collaboration and feedback. Explore my work samples, and let’s connect to discuss how I can bring value to your next project!", 
-  getInTouchUrl: Contact, // URL for your contact or form page
-  authorName: "Andrew Thompson", // Replace with your name
-  profileImgTagLine: "Aspiring Software Developer", // Your tagline or job title
-  authorContactMail: "aj.thompson8888@gmail.com", // Your email address
-  authorContactNumber: "000-000-0000", // Your contact number (optional)
+  authorProfile: Portrait,
+  authorDescription: "Hello! I’m Andrew Thompson…",
+  getInTouchUrl: "#Contact",
+  authorName: "Andrew Thompson",
+  profileImgTagLine: "Aspiring Software Developer",
+  authorContactMail: "aj.thompson8888@gmail.com",
+  authorContactNumber: "000-000-0000",
 };
 
-// Education Details
-// This array holds your education information. Replace the data with your actual education history.
-// You can add more education objects if necessary.
 const EducationPage = [
   {
-    graduationYear: 2007, // Year of graduation
-    degreeType: "High School", // Type of degree
-    institution: "Eau Gallie High School", // Institution name
-    institutionUrl: "https://www.brevardschools.org/o/eghs", // Institution website link (optional)
+    graduationYear: 2007,
+    degreeType: "High School",
+    institution: "Eau Gallie High School",
+    institutionUrl: "https://brevardschools.org/o/eghs",
   },
   {
-    graduationYear: 2012, // Year of graduation
-    degreeType: "Associates in Arts", // Degree type
-    institution: "Brevard Community College (Now Eastern Florida State College)", // Institution name
-    institutionUrl: "https://www.easternflorida.edu/", // Institution website link (optional)
+    graduationYear: 2012,
+    degreeType: "Associates in Arts",
+    institution: "Eastern Florida State College",
+    institutionUrl: "https://easternflorida.edu",
   },
   {
-    graduationYear: "Not Finished - 2015", // Year of graduation
-    degreeType: "Bachelor's of Science Mechanical Engineering", // Degree type
-    institution: "University of North Carolina at Charlotte", // Institution name
-    institutionUrl: "https://www.charlotte.edu/", // Institution website link (optional)
+    graduationYear: 2015,
+    degreeType: "B.S. Mechanical Engineering",
+    institution: "UNC Charlotte",
+    institutionUrl: "https://charlotte.edu",
   },
   {
-    graduationYear: 2025, // Year of graduation
-    degreeType: "Full Stack Web Development Certificate", // Degree type
-    institution: "University of North Carolina at Charlotte", // Institution name
-    institutionUrl: "https://bootcamp.uncc.edu/", // Institution website link (optional)
-  }
-  // Add more educational qualifications if needed
+    graduationYear: 2025,
+    degreeType: "Full Stack Web Dev Certificate",
+    institution: "UNC Charlotte Bootcamp",
+    institutionUrl: "https://bootcamp.uncc.edu",
+  },
 ];
 
-// Certifications Section
-// This array holds the details of certifications you have earned. Replace with your actual certificates.
-// To add more certifications, simply copy and modify the object structure below.
 const CertificatesPage = [
   {
-    img: Badge, // Certificate image URL
-    title: "Coding: Full Stack Web Development Certificate", // Certificate title
-    description: "This certificate badge indicates that the holder completed the UNC Charlotte Coding Bootcamp and has the technical expertise to develop web applications requiring UI, front-end, and back-end skills.", // Short description of the certification
-    issuedBy: "UNC Charlotte", // Issuer (e.g., Coursera, Google, etc.)
-    credentialURL: "https://www.credly.com/earner/earned/share/3d764556-e5f4-49b1-b94e-8875edb19b03", // Optional: URL to verify the certificate (if applicable)
+    img: Badge,
+    title: "Full Stack Web Development Certificate",
+    description: "Completed UNC Charlotte Coding Bootcamp…",
+    issuedBy: "UNC Charlotte",
+    credentialURL: "https://credly.com/…",
   },
-  // Add more certificates following the structure above
 ];
 
-// Skills Section Icons
-// The 'skillsPage' array lists the skill icons to display in the portfolio.
-// To add or remove icons, import them from react-icons and include them here.
-// Example: import { AiFillAmazonSquare } from "react-icons/ai" and add AiFillAmazonSquare below.
 const skillsPage = [
   FaGit,
   RiNodejsFill,
@@ -139,62 +85,25 @@ const skillsPage = [
   FaCss3Alt,
 ];
 
-// Projects Section
-// Replace the dummy project data with your actual projects.
-// You can add or remove projects as needed.
-export const projectsPage = [
+const projectsPage = [
   {
-    projectName: "Book Search", // Project name
-    projectDescription: "Search for book and save them to a list if you want to read them or change that list to if you have read them", // Project description
-    projectURL: "https://booksearch-56mo.onrender.com/", // Optional: Project demo link (if hosted)
-    githubRepositoryURL: "https://github.com/Ajthompson88/M18", // Optional: GitHub repository link
-    tags: "MongoDB, Express.js, React.js, and Node.js", // Tech stack used in the project
-    date: "November 2024 - May 2025", // Project duration
+    projectName: "Book Search",
+    projectDescription: "Search for books…",
+    projectURL: "https://booksearch-…",
+    githubRepositoryURL: "https://github.com/Ajthompson88/M18",
+    tags: ["MongoDB", "Express", "React", "Node"],
+    date: "Nov 2024 – May 2025",
   },
-  {
-    projectName: "Gridlock", // Project name
-    projectDescription: "Want to play a fun game of Tic-Tac-Toe? Have no one to play with? Thats no problem, just checkout GridLock the Tic-Tac-Toe game that can play against you.", // Project description
-    projectURL: "https://gridlock-75x0.onrender.com/", // Optional: Project demo link (if hosted)
-    githubRepositoryURL: "https://github.com/Jimmykotter/GridLock", // Optional: GitHub repository link
-    tags: "MongoDB, Express.js, React.js, and Node.js", // Tech stack used in the project
-    date: "April 2025 - May 2025", // Project duration
-  },
-  {
-    projectName: "Look Me Up - Candidate Finder", // Project name
-    projectDescription: "A candidate finder that searches through Github profiles for you randomly.", // Project description
-    projectURL: "https://lookmeup.onrender.com/", // Optional: Project demo link (if hosted)
-    githubRepositoryURL: "https://github.com/Ajthompson88/LookMeUp", // Optional: GitHub repository link
-    tags: "JavaScript TypeScript CSS HTML", // Tech stack used in the project
-    date: "November 2024 - May 2025", // Project duration
-  },
-  {
-    projectName: "Traveller's Weather Dashboard", // Project name
-    projectDescription: "A weather API for searching a city that you may be traveling to and want to checkout a 5 day forecast.", // Project description
-    projectURL: "https://weatherapi-1-ia2e.onrender.com/", // Optional: Project demo link (if hosted)
-    githubRepositoryURL: "https://github.com/Ajthompson88/WeatherAPI", // Optional: GitHub repository link
-    tags: "MongoDB, Express.js, React.js, and Node.js", // Tech stack used in the project
-    date: "April 2025 - May 2025", // Project duration
-  },
-  {
-    projectName: "KanBan Board", // Project name
-    projectDescription: "A KanBan board for keeping track of tasks during a project.", // Project description
-    projectURL: "https://kanban-board-t0wb.onrender.com/", // Optional: Project demo link (if hosted)
-    githubRepositoryURL: "https://github.com/Ajthompson88/M14KanbanBoardChallenge", // Optional: GitHub repository link
-    tags: "MongoDB, Express.js, React.js, and Node.js", // Tech stack used in the project
-    date: "November 2024 - May 2025", // Project duration
-  },
+  // …other projects…
 ];
-
-// Exporting all components for use in other parts of the application
+const textLogo = "";
 export {
-  navElements,
-  textLogo,
-  imgLogo,
-  AboutPage,
   footerIcons,
+  navElements,
+  AboutPage,
   EducationPage,
-  skillsPage,
   CertificatesPage,
-  Loading,
-  Portrait,
+  skillsPage,
+  projectsPage,
+  textLogo
 };

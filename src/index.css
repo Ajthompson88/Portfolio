@@ -13,7 +13,7 @@ html{
 }
 
 body{
-  background-image: url(../Assets/Code-scaled.jpeg);
+  background-image: url(./assets/Code-scaled.jpeg);
   font-family: "Inter", sans-serif;
   color: white;
   scroll-behavior: smooth;

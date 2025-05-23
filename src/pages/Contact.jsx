@@ -1,69 +1,61 @@
+// src/pages/Contact.jsx
 import { containerStyle } from "./styles.js";
 import { PageTitle } from "../components/components.js";
 import { AboutPage, footerIcons } from "../assets/assets.js";
 import { MdEmail } from "react-icons/md";
-import { Link } from "react-router-dom";
 import { FaPhoneAlt } from "react-icons/fa";
 import { useState } from "react";
 
-const LinkStyles = `flex items-center gap-2 hover:text-white/65 transition-colors ease-linear`;
-
 const Contact = () => {
-  const [isLoading, setIsLoading] = useState(true);
-  const [isProfileLoading, setIsProfileLoading] = useState(true);
+  const [imgLoading, setImgLoading] = useState(true);
   return (
-    <div id="Contact" className={`${containerStyle}`}>
-      <PageTitle title={"Contact"} />
-      <div className="flex flex-col bedar-sc2:flex-row bg-mainColor rounded-xl overflow-hidden">
-        <div className="hidden bedar-sc2:flex justify-center items-center w-1/2">
+    <section id="Contact" className={containerStyle}>
+      <PageTitle>Contact</PageTitle>
+      <div className="flex flex-col md:flex-row bg-mainColor rounded overflow-hidden">
+        <div className="hidden md:flex items-center justify-center w-1/2">
           <img
             src="https://saqibbedar.github.io/Portfolio/contact_image.webp"
-            onLoad={() => setIsLoading(false)}
-            className={`${isLoading ? "skeleton w-96 h-80" : ""}`}
-            alt="contact-us-image"
+            alt="Contact illustration"
+            onLoad={() => setImgLoading(false)}
+            className={`${imgLoading ? "skeleton w-96 h-80" : ""}`}
           />
         </div>
-        <div className="w-full bedar-sc2:w-1/2 flex flex-col items-center gap-1 py-12 px-5 text-white font-light leading-[26px] text-[18px]">
+        <div className="p-8 flex flex-col items-start gap-4 text-white">
           <img
-            onLoad={() => setIsProfileLoading(false)}
             src={AboutPage.authorProfile}
-            className={`bg-[#beb7e0] w-36 h-36 rounded-full border-2 border-white ${
-              isProfileLoading ? "skeleton" : ""
-            }`}
-            alt="author-profile"
+            alt="Profile"
+            className="w-32 h-32 rounded-full border-2 border-white"
           />
-          <h1 className="text-4xl bedar-sc2:text-5xl font-extrabold text-[#fedf89] my-4 text-center">
-            Contact Me
-          </h1>
-          <div className="text-center mb-4">
-          
-          </div>
-          <Link
-            to={`mailto:${AboutPage.authorContactMail}`}
-            className={LinkStyles}
+          <h1 className="text-3xl font-bold text-[#fedf89]">Contact Me</h1>
+          <a
+            href={`mailto:${AboutPage.authorContactMail}`}
+            className="flex items-center gap-2 hover:underline"
           >
-            <MdEmail className="w-6 h-6" />{" "}
-            <span>{AboutPage.authorContactMail}</span>
-          </Link>
-          <Link
-            to={`tel:${AboutPage.authorContactMail}`}
-            className={LinkStyles}
+            <MdEmail /> {AboutPage.authorContactMail}
+          </a>
+          <a
+            href={`tel:${AboutPage.authorContactNumber}`}
+            className="flex items-center gap-2 hover:underline"
           >
-            <FaPhoneAlt className="w-[18px] h-[18px]" />{" "}
-            <span>{AboutPage.authorContactNumber}</span>
-          </Link>
-          <div className="flex justify-center gap-2 flex-wrap mt-4">
-            {footerIcons.map(
-              ({ name, component: IconComponent, link }, index) => (
-                <Link to={link} key={index} title={name}>
-                  <IconComponent className="h-9 w-9 rounded-lg fill-zinc-400 hover:fill-white transition-colors ease-linear" />
-                </Link>
-              )
-            )}
+            <FaPhoneAlt /> {AboutPage.authorContactNumber}
+          </a>
+          <div className="flex gap-3 mt-4">
+            {footerIcons.map(({ name, component: Icon, link }) => (
+              <a
+                key={name}
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={name}
+                className="hover:text-gray-300"
+              >
+                <Icon className="w-6 h-6" />
+              </a>
+            ))}
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

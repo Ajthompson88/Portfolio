@@ -1,7 +1,6 @@
+// src/components/Project.jsx
 import { FaFolderOpen } from "react-icons/fa";
-import { IoLogoGithub } from "react-icons/io";
-import { IoEyeSharp } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { IoLogoGithub, IoEyeSharp } from "react-icons/io5";
 import PropTypes from "prop-types";
 
 const Project = ({
@@ -11,42 +10,53 @@ const Project = ({
   githubRepositoryURL,
   tags,
   date,
-}) => {
-    return (
-      <div className="flex flex-col bg-mainColor text-white p-5 bedar-sc2:p-8 rounded-md border shadow">
-        <FaFolderOpen className="w-6 h-6" />
-        <strong className="mt-5 mb-2 text-2xl text-[#fedf89]">
-          {projectName}
-        </strong>
-        <div className="mb-2">{projectDescription}</div>
-        <div>{tags}</div>
-        <div className="flex items-center justify-between mt-10">
-          <div>{date}</div>
-          <div className="flex gap-2">
-            {projectURL && (
-              <a to={projectURL}>
-                {<IoEyeSharp title="Live demo" className="w-6 h-6" />}
-              </a>
-            )}
+}) => (
+  <div className="flex flex-col bg-mainColor text-white p-5 md:p-8 rounded-md border shadow">
+    <FaFolderOpen className="w-6 h-6" />
+    <strong className="mt-5 mb-2 text-2xl text-[#fedf89]">
+      {projectName}
+    </strong>
+    <p className="mb-2">{projectDescription}</p>
+    <div className="flex gap-2 my-4">
+      {projectURL && (
+        <a
+          href={projectURL}
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Live Demo"
+          className="flex items-center gap-1"
+        >
+          <IoEyeSharp className="w-6 h-6" />
+        </a>
+      )}
+      {githubRepositoryURL && (
+        <a
+          href={githubRepositoryURL}
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Source Code"
+          className="flex items-center gap-1"
+        >
+          <IoLogoGithub className="w-6 h-6" />
+        </a>
+      )}
+    </div>
+    <div className="flex flex-wrap gap-2 mb-2">
+      {Array.isArray(tags)
+        ? tags.map((t) => <span key={t}>{t}</span>)
+        : <span>{tags}</span>}
+    </div>
+    <div className="text-sm text-gray-300">{date}</div>
+  </div>
+);
 
-            {
-              <a to={githubRepositoryURL}>
-                {<IoLogoGithub title="Source Code" className="w-6 h-6" />}
-              </a>
-            }
-          </div>
-        </div>
-      </div>
-    );
-};
 Project.propTypes = {
   projectName: PropTypes.string.isRequired,
-  projectDescription: PropTypes.string.isRequired,
+  projectDescription: PropTypes.string,
   projectURL: PropTypes.string,
-  githubRepository: PropTypes.string,
+  githubRepositoryURL: PropTypes.string,
   tags: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   date: PropTypes.string,
 };
 
 export default Project;
-
