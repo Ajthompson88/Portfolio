@@ -9,13 +9,17 @@ const Navbar = ({ activeElem, setActiveElem }) => {
   const [isMenuHidden, setIsMenuHidden] = useState(true);
 
   useEffect(() => {
-    if (!isMenuHidden) {
+    if (typeof window !== "undefined" && document.body && !isMenuHidden) {
       const onClick = (e) => {
         e.stopPropagation();
         setIsMenuHidden(true);
       };
+
       document.body.addEventListener("click", onClick);
-      return () => document.body.removeEventListener("click", onClick);
+
+      return () => {
+        document.body.removeEventListener("click", onClick);
+      };
     }
   }, [isMenuHidden]);
 
@@ -27,17 +31,13 @@ const Navbar = ({ activeElem, setActiveElem }) => {
   return (
     <nav className="fixed w-full top-0 px-5 md:px-10 py-4 z-50 bg-white/85 backdrop-blur">
       <div className="flex items-center justify-between">
-        {imgLogo ? (
-          <img src={imgLogo} alt="Logo" />
-        ) : (
-          <a
-            href={`#${navElements[0]}`}
-            onClick={() => setActiveElem(navElements[0])}
-            className="text-lg md:text-3xl font-bold"
-          >
-            {textLogo}
-          </a>
-        )}
+        <a
+          href={`#${navElements[0]}`}
+          onClick={() => setActiveElem(navElements[0])}
+          className="text-lg md:text-3xl font-bold"
+        >
+          {textLogo}
+        </a>
 
         <div className="hidden md:flex gap-4">
           {navElements.map((elem) => (

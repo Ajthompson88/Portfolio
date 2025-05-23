@@ -10,15 +10,18 @@ const Projects = () => {
   useEffect(() => {
     if (projectsPage && projectsPage.length > 0) {
       const btn = document.querySelector(".project-btn");
-      const handleMouseEnter = () => setIsHovered(true);
-      const handleMouseLeave = () => setIsHovered(false);
+      if (btn) {
+        const handleMouseEnter = () => setIsHovered(true);
+        const handleMouseLeave = () => setIsHovered(false);
 
-      btn.addEventListener("mouseenter", handleMouseEnter);
-      btn.addEventListener("mouseleave", handleMouseLeave);
-      return () => {
-        btn.removeEventListener("mouseenter", handleMouseEnter);
-        btn.removeEventListener("mouseleave", handleMouseLeave);
-      };
+        btn.addEventListener("mouseenter", handleMouseEnter);
+        btn.addEventListener("mouseleave", handleMouseLeave);
+
+        return () => {
+          btn.removeEventListener("mouseenter", handleMouseEnter);
+          btn.removeEventListener("mouseleave", handleMouseLeave);
+        };
+      }
     }
   }, []);
 

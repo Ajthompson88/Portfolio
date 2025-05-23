@@ -5,7 +5,7 @@ import { AboutPage, footerIcons } from "../assets/assets.js";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { useState } from "react";
-
+import contactLogo from "../assets/contact_image.webp";
 const Contact = () => {
   const [imgLoading, setImgLoading] = useState(true);
   return (
@@ -14,9 +14,10 @@ const Contact = () => {
       <div className="flex flex-col md:flex-row bg-mainColor rounded overflow-hidden">
         <div className="hidden md:flex items-center justify-center w-1/2">
           <img
-            src="https://saqibbedar.github.io/Portfolio/contact_image.webp"
+            src= { contactLogo }
             alt="Contact illustration"
             onLoad={() => setImgLoading(false)}
+            onError={() => setImgLoading(false)} // Fallback for failed image loading
             className={`${imgLoading ? "skeleton w-96 h-80" : ""}`}
           />
         </div>
