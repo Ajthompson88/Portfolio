@@ -29,7 +29,7 @@ const navElements = ["About", "Education", "Skills", "Projects", "Contact"];
 
 const AboutPage = {
   authorProfile: Portrait,
-  authorDescription: "Hello! I’m Andrew Thompson…",
+  authorDescription: "",
   getInTouchUrl: "#Contact",
   authorName: "Andrew Thompson",
   profileImgTagLine: "Aspiring Software Developer",
