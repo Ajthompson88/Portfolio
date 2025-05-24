@@ -11,6 +11,7 @@ const Contact = () => {
   return (
     <section id="Contact" className={containerStyle}>
       <PageTitle>Contact</PageTitle>
+      <h2 className="text-2xl font-semibold mb-4">Contact Me</h2>
       <div className="flex flex-col md:flex-row bg-mainColor rounded overflow-hidden">
         <div className="hidden md:flex items-center justify-center w-1/2">
           <img

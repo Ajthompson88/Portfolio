@@ -28,7 +28,7 @@ const navElements = ["About", "Education", "Skills", "Projects", "Contact"];
 
 const AboutPage = {
   authorProfile: Portrait,
-  authorDescription: "Full-Stack Developer with a hands-on approach to problem-solving and a passion for creating efficient, user-friendly applications. I have just finished a Full Stack Web Development Certificate from UNC Charlotte Bootcamp, where I am honing my skills in JavaScript, React, Node.js, and more. My background in Automotive Technology has equipped me with a strong analytical mindset and the ability to tackle complex challenges. I am eager to leverage my technical expertise and creativity to contribute to innovative projects in the tech industry.",
+  authorDescription: "Hello! I’m , a Full-Stack Developer and recent graduate of the University of North Carolina at Charlotte – Software Engineering Bootcamp (May 2025). After 17 years in the automotive parts business, I’ve honed the ability to think quickly on my feet and deliver under pressure—skills I now bring to building elegant, reliable software. I fell in love with coding as a new challenge, combining my lifelong passion for computers and hands-on building with professional software engineering. I’m proficient in HTML, CSS, JavaScript (React & Node.js), Python, and modern backend systems. My goal is always the same: deliver polished, high-performance applications that “just work,” delight users, and stand up to real-world demands. When I’m not writing code, you’ll likely find me assembling custom PCs or diving into the latest automotive tech. Ready to build something great together?",
   getInTouchUrl: "#Contact",
   authorName: "Andrew Thompson",
   profileImgTagLine: "Aspiring Software Developer",

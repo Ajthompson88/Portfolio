@@ -7,6 +7,7 @@ import { PageTitle } from "../components/components.js";
 const Education = () => (
   <section id="Education" className={containerStyle}>
     <PageTitle>Education</PageTitle>
+    <h2 className="text-2xl font-semibold mb-4">Education</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       {EducationPage.map(({ degreeType, graduationYear, institution, institutionUrl }) => (
         <div
