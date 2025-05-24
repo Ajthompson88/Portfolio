@@ -5,7 +5,6 @@ import {
   FaFacebookSquare,
   FaHtml5,
   FaPython,
-  FaGit,
   FaGithub,
   FaJs,
   FaCss3Alt,
@@ -29,12 +28,12 @@ const navElements = ["About", "Education", "Skills", "Projects", "Contact"];
 
 const AboutPage = {
   authorProfile: Portrait,
-  authorDescription: "",
+  authorDescription: "Full-Stack Developer with a hands-on approach to problem-solving and a passion for creating efficient, user-friendly applications. I have just finished a Full Stack Web Development Certificate from UNC Charlotte Bootcamp, where I am honing my skills in JavaScript, React, Node.js, and more. My background in Automotive Technology has equipped me with a strong analytical mindset and the ability to tackle complex challenges. I am eager to leverage my technical expertise and creativity to contribute to innovative projects in the tech industry.",
   getInTouchUrl: "#Contact",
   authorName: "Andrew Thompson",
   profileImgTagLine: "Aspiring Software Developer",
   authorContactMail: "aj.thompson8888@gmail.com",
-  authorContactNumber: "000-000-0000",
+  authorContactNumber: "704-351-4995",
 };
 
 const EducationPage = [
@@ -49,12 +48,6 @@ const EducationPage = [
     degreeType: "Associates in Arts",
     institution: "Eastern Florida State College",
     institutionUrl: "https://easternflorida.edu",
-  },
-  {
-    graduationYear: 2015,
-    degreeType: "B.S. Mechanical Engineering",
-    institution: "UNC Charlotte",
-    institutionUrl: "https://charlotte.edu",
   },
   {
     graduationYear: 2025,
@@ -75,7 +68,6 @@ const CertificatesPage = [
 ];
 
 const skillsPage = [
-  FaGit,
   RiNodejsFill,
   FaGithub,
   FaJs,
@@ -128,7 +120,7 @@ const projectsPage = [
   },
   
 ];
-const textLogo = "";
+const textLogo = "Jeremiah 29:11";
 export {
   footerIcons,
   navElements,
