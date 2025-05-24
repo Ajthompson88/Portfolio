@@ -88,13 +88,45 @@ const skillsPage = [
 const projectsPage = [
   {
     projectName: "Book Search",
-    projectDescription: "Search for books…",
-    projectURL: "https://booksearch-…",
+    projectDescription: "Search for books and save them for reference later as an unread book or one that you have alreay read",
+    projectURL: "https://booksearch-56mo.onrender.com",
     githubRepositoryURL: "https://github.com/Ajthompson88/M18",
     tags: ["MongoDB", "Express", "React", "Node"],
     date: "Nov 2024 – May 2025",
   },
-  // …other projects…
+  {
+    projectName: "Look Me Up",
+    projectDescription: "Find candidates for by using this useful candidate search tool",
+    projectURL: "https://lookmeup.onrender.com",
+    githubRepositoryURL: "https://github.com/Ajthompson88/LookMeUp",
+    tags: ["TypeScript", "JavaScript", "CSS", "HTML"],
+    date: "Nov 2024 – May 2025",
+  },
+  {
+    projectName: "Traveller's Weather Dashboard",
+    projectDescription: "Look up weather for any city you might be travelling to and see the forecast for the next 5 days",
+    projectURL: "https://weatherapi-1-ia2e.onrender.com",
+    githubRepositoryURL: "https://github.com/Ajthompson88/WeatherAPI",
+    tags: ["Typescript", "Javascript", "CSS", "HTML"],
+    date: "Nov 2024 – May 2025",
+  },
+  {
+    projectName: "Coming Soon",
+    projectDescription: "",
+    projectURL: "",
+    githubRepositoryURL: "",
+    tags: ["", "", "", ""],
+    date: "Nov 2024 – May 2025",
+  },
+  {
+    projectName: "",
+    projectDescription: "",
+    projectURL: "",
+    githubRepositoryURL: "",
+    tags: ["", "", "", ""],
+    date: "Nov 2024 – May 2025",
+  },
+  
 ];
 const textLogo = "";
 export {
