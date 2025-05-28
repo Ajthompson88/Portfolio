@@ -1,5 +1,6 @@
 // src/components/Certificate.jsx
 import { IoEyeSharp } from "react-icons/io5";
+import PropTypes from "prop-types";
 
 const Certificate = ({ img, title, description, issuedBy, credentialURL }) => (
   <div className="flex-shrink-0 w-64 bg-mainColor text-white p-4 rounded shadow">
@@ -22,4 +23,13 @@ const Certificate = ({ img, title, description, issuedBy, credentialURL }) => (
   </div>
 );
 
+Certificate.propTypes = {
+  img: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  issuedBy: PropTypes.string.isRequired,
+  credentialURL: PropTypes.string.isRequired,
+};
+
 export default Certificate;
+

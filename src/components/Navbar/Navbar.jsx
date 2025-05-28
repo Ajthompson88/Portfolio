@@ -29,7 +29,7 @@ const Navbar = ({ activeElem, setActiveElem }) => {
   };
 
   return (
-    <nav className="fixed w-full top-0 px-5 md:px-10 py-4 z-50 bg-white/85 backdrop-blur">
+    <nav className="navbar fixed w-full top-0 px-5 md:px-10 py-4 z-50 bg-white/85 backdrop-blur">
       <div className="flex items-center justify-between">
         <a
           href={`#${navElements[0]}`}

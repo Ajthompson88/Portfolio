@@ -10,25 +10,25 @@ import {
   FaCss3Alt,
   FaReact,
 } from "react-icons/fa";
-import { RiNodejsFill } from "react-icons/ri";
+
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoLogoGithub } from "react-icons/io";
 import Badge from "./coding-full-stack-web-development-certificate.png";
 import Portrait from "./portrait.jpeg";
 
 const footerIcons = [
-  { name: "x", component: FaSquareXTwitter, link: "https://x.com/…" },
-  { name: "linkedIn", component: FaLinkedin, link: "https://linkedin.com/…" },
-  { name: "facebook", component: FaFacebookSquare, link: "https://facebook.com/…" },
-  { name: "instagram", component: FaInstagramSquare, link: "https://instagram.com/…" },
-  { name: "github", component: IoLogoGithub, link: "https://github.com/…" },
+  { name: "x", component: FaSquareXTwitter, link: "https://x.com/ajthompson8888" },
+  { name: "linkedIn", component: FaLinkedin, link: "https://www.linkedin.com/in/andrew-thompson-442477aa/" },
+  { name: "facebook", component: FaFacebookSquare, link: "https://www.facebook.com/share/1FHphmYFTj/?mibextid=wwXIfr" },
+  { name: "instagram", component: FaInstagramSquare, link: "https://www.instagram.com/aj.thompson8888?igsh=MWY4c3g4MXJ1Mzdmaw%3D%3D&utm_source=qr" },
+  { name: "github", component: IoLogoGithub, link: "https://github.com/ajthompson88" },
 ];
 
 const navElements = ["About", "Education", "Skills", "Projects", "Contact"];
 
 const AboutPage = {
   authorProfile: Portrait,
-  authorDescription: "Hello! I’m , a Full-Stack Developer and recent graduate of the University of North Carolina at Charlotte – Software Engineering Bootcamp (May 2025). After 17 years in the automotive parts business, I’ve honed the ability to think quickly on my feet and deliver under pressure—skills I now bring to building elegant, reliable software. I fell in love with coding as a new challenge, combining my lifelong passion for computers and hands-on building with professional software engineering. I’m proficient in HTML, CSS, JavaScript (React & Node.js), Python, and modern backend systems. My goal is always the same: deliver polished, high-performance applications that “just work,” delight users, and stand up to real-world demands. When I’m not writing code, you’ll likely find me assembling custom PCs or diving into the latest automotive tech. Ready to build something great together?",
+  authorDescription: "Hello! I’m , a Full-Stack Developer and recent graduate of the University of North Carolina at Charlotte – Software Devlopment Bootcamp (May 2025). After 17 years in the automotive parts business, I’ve honed the ability to think quickly on my feet and deliver under pressure—skills, and I now bring those skills to building elegant, reliable software. I fell in love with coding as a new challenge, combining my lifelong passion for computers and hands-on building with professional software development. I’m proficient in HTML, CSS, JavaScript (React & Node.js), Python, and modern backend systems. My goal is always the same: deliver polished, high-performance applications that “just work,” delight users, and stand up to real-world demands. When I’m not writing code, you’ll likely find me assembling custom PCs or diving into the latest automotive tech. Ready to build something great together?",
   getInTouchUrl: "#Contact",
   authorName: "Andrew Thompson",
   profileImgTagLine: "Aspiring Software Developer",
@@ -51,7 +51,7 @@ const EducationPage = [
   },
   {
     graduationYear: 2025,
-    degreeType: "Full Stack Web Dev Certificate",
+    degreeType: "Full Stack Developer Certificate",
     institution: "UNC Charlotte Bootcamp",
     institutionUrl: "https://bootcamp.uncc.edu",
   },
@@ -63,18 +63,17 @@ const CertificatesPage = [
     title: "Full Stack Web Development Certificate",
     description: "Completed UNC Charlotte Coding Bootcamp…",
     issuedBy: "UNC Charlotte",
-    credentialURL: "https://credly.com/…",
+    credentialURL: "https://www.credly.com/badges/3d764556-e5f4-49b1-b94e-8875edb19b03",
   },
 ];
 
 const skillsPage = [
-  RiNodejsFill,
   FaGithub,
+  FaHtml5,
+  FaCss3Alt,
   FaJs,
   FaReact,
   FaPython,
-  FaHtml5,
-  FaCss3Alt,
 ];
 
 const projectsPage = [
@@ -103,19 +102,19 @@ const projectsPage = [
     date: "Nov 2024 – May 2025",
   },
   {
-    projectName: "Coming Soon",
-    projectDescription: "",
-    projectURL: "",
-    githubRepositoryURL: "",
-    tags: ["", "", "", ""],
+    projectName: "GridLock",
+    projectDescription: "A fun new way to play tic-tac-toe against a computer player... for now",
+    projectURL: "https://gridlock-75x0.onrender.com/",
+    githubRepositoryURL: "https://github.com/Jimmykotter/gridlock",
+    tags: ["React", "GraphQL", "Node.js", "Express", "MongoDB", "Apollo", "JWT", "bcrypt"],
     date: "Nov 2024 – May 2025",
   },
   {
-    projectName: "",
-    projectDescription: "",
-    projectURL: "",
-    githubRepositoryURL: "",
-    tags: ["", "", "", ""],
+    projectName: "My Krazy Kanban Board",
+    projectDescription: "A Kanban board to help you keep track of your tasks and projects",
+    projectURL: "https://kanban-board-t0wb.onrender.com",
+    githubRepositoryURL: "https://github.com/Ajthompson88/M14KanbanBoardChallenge",
+    tags: ["TypeScript", "JavaScript", "CSS", "HTML", "Node.js", "Express", "PostgreSQL"],
     date: "Nov 2024 – May 2025",
   },
   

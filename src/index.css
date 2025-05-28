@@ -12,6 +12,10 @@ html{
     scroll-padding: 110px;
 }
 
+.navbar{
+  color:black;
+}
+
 body{
   background-image: url(./assets/Code-scaled.jpeg);
   font-family: "Inter", sans-serif;
